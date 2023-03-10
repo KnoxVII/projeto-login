@@ -54,18 +54,24 @@ main {
 }
 
 #email {
+    background: var(--yellow);
+    background: linear-gradient(140deg, var(--yellow) 63%, var(--dark-yellow) 100%);
+    background: linear-gradient();
     background-color: var(--yellow);
+    border: none;
     border-radius: 10px;
     padding: 10px;
-    width: 41vw;
+    width: 42vw;
 }
 
 #senha {
-    background-color: var(--yellow);
+    background: var(--yellow);
+    background: linear-gradient(140deg, var(--yellow) 63%, var(--dark-yellow) 100%);
+    border: none;
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
-    width: 41vw;
+    width: 42vw;
 }
 
 #botoes {
