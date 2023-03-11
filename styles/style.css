@@ -95,12 +95,27 @@ div.campo > input {
     font-size: 1em;
     height: 100%;
     padding: 4px;
+    transition: 1s;
     width: calc(100% - 41.4px);
-    transform:translateY(-12px) ;
+    transform:translateY(-13px) ;
+}
+
+div.campo > input:hover {
+    background: linear-gradient(140deg, #ffeeaa 63%, #fdd579);
+    cursor: pointer;
 }
 
 div.campo > input:focus-visible {
+    background: linear-gradient(140deg, #ffeeaa 63%, #fdd579);
     outline: none;
+}
+
+div.campo > input:enabled {
+    font-size: .9em;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #ffeeaa inset;
 }
 
 form > #botoes {
