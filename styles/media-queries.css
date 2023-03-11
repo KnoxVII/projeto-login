@@ -1,11 +1,13 @@
 @charset "UTF-8";
 
+/*CONFIGURAÇÃO TABLET*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
     body {
         background: linear-gradient(180deg, rgba(32,32,32,1) 0%, rgba(53,53,53,1) 60%, rgba(74,74,74,1) 100%);
     }
     
     section#login {
+        height: 400px;
         width: 100vh;
     }
 
@@ -17,24 +19,36 @@
 
     section#login > div#formulario {
         float: left;
+        padding: 30px 20px;
         width: 60%;
-    }
-
-    div#formulario > p {
-        font-size: 1em;
     }
 
     div#formulario > h1 {
         font-size: 1.5em;
     }
+
+    div#formulario > p {
+        font-size: 1em;
+        padding: 10px 0px;
+    }
+
+    form > div.campo {
+        margin: 10px 0px;
+    } 
+    
+    form > #botoes > a {
+        margin: 10px 0px;
+    }
 }
 
+/*CONFIGURAÇÃO TELAS GRANDES*/
 @media screen and (min-width: 992px) {
     body {
         background: linear-gradient(180deg, rgba(32,32,32,1) 0%, rgba(53,53,53,1) 60%, rgba(74,74,74,1) 100%);
     }
     
     section#login {
+        height: 500px;
         width: 990px;
     }
 
@@ -46,14 +60,24 @@
 
     section#login > div#formulario {
         float: left;
+        padding: 80px 20px;
         width: 60%;
-    }
-
-    div#formulario > p {
-        font-size: 1.2em;
     }
 
     div#formulario > h1 {
         font-size: 2em;
+    }
+
+    div#formulario > p {
+        font-size: 1.2em;
+        padding: 10px 0px;
+    }   
+
+    form > div.campo {
+        margin: 10px 0px;
+    } 
+    
+    form > #botoes > a {
+        margin: 10px 0px;
     }
 }

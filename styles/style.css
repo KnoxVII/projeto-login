@@ -4,7 +4,7 @@
     --black: #202020;
     --dark-gray: #363636;
     --gray: #D6D6D6;
-    --dark-yellow: #d6bc4a;
+    --dark-yellow: #FDCB5A;
     --yellow: #FFE681;
 
 }
@@ -32,16 +32,16 @@ main {
 section#login {
     background-color: var(--gray);
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.849);
     height: 525px;
     left: 50%;
     overflow: hidden;
     position: absolute;
     top: 50%;
-    transform: translate(-50%, -50%);
     transition: width .5s, height .5s;
     transition-timing-function: ease;
     width: 250px;
+    transform: translate(-50%, -50%);
 }
 
 section#login > #imagem {
@@ -59,7 +59,6 @@ div#formulario {
 
 div#formulario > h1 {
     text-align: center;
-    padding: 10px;
 }
 
 div#formulario > p {
@@ -69,57 +68,64 @@ div#formulario > p {
 
 form > div.campo {
     background: var(--black);
-    border-radius: 5px;
+    border: 2px solid var(--black);
+    border-radius: 10px;
     display: block;
     height: 40px;
     margin: 5px 0px;
     width: 100%;
 }
 
-/* #email {
-    background: var(--yellow);
-    background: linear-gradient(140deg, var(--yellow) 63%, var(--dark-yellow) 100%);
-    background: linear-gradient();
-    background-color: var(--yellow);
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-    width: 42vw;
+div.campo > label {
+    display: none;
 }
 
-#senha {
-    background: var(--yellow);
+div.campo > span {
+    color: var(--yellow);
+    font-size: 2em;
+    padding: 5px;
+    transform: translateY(-3px);
+    width: 37px;
+}
+
+div.campo > input {
     background: linear-gradient(140deg, var(--yellow) 63%, var(--dark-yellow) 100%);
-    border: none;
+    border: 0px;
     border-radius: 10px;
-    padding: 10px;
-    margin-top: 10px;
-    width: 42vw;
-} */
+    font-size: 1em;
+    height: 100%;
+    padding: 4px;
+    width: calc(100% - 41.4px);
+    transform:translateY(-12px) ;
+}
 
 form > #botoes {
     margin-top: 10px;
 }
 
 form > #botoes > input {
-    background-color: var(--dark-yellow);
+    background-color: var(--black);
     border: none;
     border-radius: 5px;
+    color: var(--gray);
     display: block;
     font-size: 1em;
     font-weight: bold;
     height: 40px;
+    transition: .2s;
+    transition-timing-function: ease;
     width: 100%;
 }
 
 form > #botoes > input:hover {
-    background-color: ;
+    background-color: var(--dark-yellow);
+    color: var(--black);
     cursor: pointer;
 }
 
 form > #botoes > a {
     background-color: var(--gray);
-    border: 2px solid var(--dark-yellow);
+    border: 2px solid var(--black);
     border-radius: 5px;
     display: block;
     font-size: 1em;
@@ -129,15 +135,19 @@ form > #botoes > a {
     padding-top: 6px;
     text-align: center;
     text-decoration: none;
+    transition: .2s;
+    transition-timing-function: ease;
     width: 100%;
 }
 
 form > #botoes > a:hover {
-
+    background-color: var(--dark-yellow);
+    border-color: var(--dark-yellow);
 }
 
 form > #botoes > a > span {
     font-size: 0.8em;
+    transform: translateY(2px);
 }
 
 
